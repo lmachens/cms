@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dohm-footer",
+      "handler": "dohm-footer.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dohm-footer",
+      "handler": "dohm-footer.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dohm-footer",
+      "handler": "dohm-footer.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

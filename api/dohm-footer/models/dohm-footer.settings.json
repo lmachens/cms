@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "dohm_footers",
+  "info": {
+    "name": "Dohm - Footer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    }
+  }
+}
