@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dohm-home",
+      "handler": "dohm-home.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dohm-home",
+      "handler": "dohm-home.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dohm-home",
+      "handler": "dohm-home.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "dohm_homes",
+  "info": {
+    "name": "Dohm - Home"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
