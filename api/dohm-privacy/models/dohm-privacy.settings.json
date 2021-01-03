@@ -1,9 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "dohm_footers",
+  "collectionName": "dohm_privacies",
   "info": {
-    "name": "Dohm - Footer",
-    "description": ""
+    "name": "Dohm - Privacy"
   },
   "options": {
     "increments": true,

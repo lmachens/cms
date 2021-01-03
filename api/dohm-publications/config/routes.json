@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dohm-publications",
+      "handler": "dohm-publications.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dohm-publications",
+      "handler": "dohm-publications.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dohm-publications",
+      "handler": "dohm-publications.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

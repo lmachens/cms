@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dohm-legal",
+      "handler": "dohm-legal.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dohm-legal",
+      "handler": "dohm-legal.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dohm-legal",
+      "handler": "dohm-legal.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

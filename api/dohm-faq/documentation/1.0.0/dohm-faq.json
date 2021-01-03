@@ -1,12 +1,12 @@
 {
   "paths": {
-    "/dohm-home": {
+    "/dohm-faq": {
       "get": {
         "deprecated": false,
-        "description": "Find all the dohm-home's records",
+        "description": "Find all the dohm-faq's records",
         "responses": {
           "200": {
-            "description": "Retrieve dohm-home document(s)",
+            "description": "Retrieve dohm-faq document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Dohm-home"
+          "Dohm-faq"
         ],
         "parameters": [
           {
@@ -195,10 +195,10 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single dohm-home record",
+        "description": "Update a single dohm-faq record",
         "responses": {
           "200": {
-            "description": "Retrieve dohm-home document(s)",
+            "description": "Retrieve dohm-faq document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Dohm-home"
+          "Dohm-faq"
         ],
         "requestBody": {
           "description": "",
@@ -252,7 +252,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewDohm-home"
+                "$ref": "#/components/schemas/NewDohm-faq"
               }
             }
           }
@@ -261,10 +261,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single dohm-home record",
+        "description": "Delete a single dohm-faq record",
         "responses": {
           "200": {
-            "description": "deletes a single dohm-home based on the ID supplied",
+            "description": "deletes a single dohm-faq based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -307,7 +307,7 @@
         },
         "summary": "",
         "tags": [
-          "Dohm-home"
+          "Dohm-faq"
         ],
         "parameters": []
       }
@@ -315,7 +315,7 @@
   },
   "components": {
     "schemas": {
-      "Dohm-home": {
+      "Dohm-faq": {
         "required": [
           "id"
         ],
@@ -324,9 +324,6 @@
             "type": "string"
           },
           "title": {
-            "type": "string"
-          },
-          "teaser": {
             "type": "string"
           },
           "cover": {
@@ -396,7 +393,7 @@
               }
             }
           },
-          "welcome": {
+          "content": {
             "type": "string"
           },
           "published_at": {
@@ -405,15 +402,12 @@
           }
         }
       },
-      "NewDohm-home": {
+      "NewDohm-faq": {
         "properties": {
           "title": {
             "type": "string"
           },
-          "teaser": {
-            "type": "string"
-          },
-          "welcome": {
+          "content": {
             "type": "string"
           },
           "published_at": {

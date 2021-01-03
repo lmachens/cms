@@ -1,12 +1,12 @@
 {
   "paths": {
-    "/dohm-home": {
+    "/dohm-about": {
       "get": {
         "deprecated": false,
-        "description": "Find all the dohm-home's records",
+        "description": "Find all the dohm-about's records",
         "responses": {
           "200": {
-            "description": "Retrieve dohm-home document(s)",
+            "description": "Retrieve dohm-about document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Dohm-home"
+          "Dohm-about"
         ],
         "parameters": [
           {
@@ -195,10 +195,10 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single dohm-home record",
+        "description": "Update a single dohm-about record",
         "responses": {
           "200": {
-            "description": "Retrieve dohm-home document(s)",
+            "description": "Retrieve dohm-about document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Dohm-home"
+          "Dohm-about"
         ],
         "requestBody": {
           "description": "",
@@ -252,7 +252,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewDohm-home"
+                "$ref": "#/components/schemas/NewDohm-about"
               }
             }
           }
@@ -261,10 +261,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single dohm-home record",
+        "description": "Delete a single dohm-about record",
         "responses": {
           "200": {
-            "description": "deletes a single dohm-home based on the ID supplied",
+            "description": "deletes a single dohm-about based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -307,7 +307,7 @@
         },
         "summary": "",
         "tags": [
-          "Dohm-home"
+          "Dohm-about"
         ],
         "parameters": []
       }
@@ -315,7 +315,7 @@
   },
   "components": {
     "schemas": {
-      "Dohm-home": {
+      "Dohm-about": {
         "required": [
           "id"
         ],
@@ -396,7 +396,74 @@
               }
             }
           },
-          "welcome": {
+          "avatar": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "content": {
             "type": "string"
           },
           "published_at": {
@@ -405,7 +472,7 @@
           }
         }
       },
-      "NewDohm-home": {
+      "NewDohm-about": {
         "properties": {
           "title": {
             "type": "string"
@@ -413,7 +480,7 @@
           "teaser": {
             "type": "string"
           },
-          "welcome": {
+          "content": {
             "type": "string"
           },
           "published_at": {

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dohm-privacy",
+      "handler": "dohm-privacy.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dohm-privacy",
+      "handler": "dohm-privacy.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dohm-privacy",
+      "handler": "dohm-privacy.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

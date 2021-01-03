@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "dohm_homes",
+  "collectionName": "dohm_abouts",
   "info": {
-    "name": "Dohm - Home",
+    "name": "Dohm - About",
     "description": ""
   },
   "options": {
@@ -28,7 +28,18 @@
       "plugin": "upload",
       "required": false
     },
-    "welcome": {
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "content": {
       "type": "richtext"
     }
   }

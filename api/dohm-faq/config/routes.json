@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dohm-faq",
+      "handler": "dohm-faq.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dohm-faq",
+      "handler": "dohm-faq.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dohm-faq",
+      "handler": "dohm-faq.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -323,7 +323,10 @@
           "id": {
             "type": "string"
           },
-          "Title": {
+          "title": {
+            "type": "string"
+          },
+          "content": {
             "type": "string"
           },
           "published_at": {
@@ -334,7 +337,10 @@
       },
       "NewDohm-footer": {
         "properties": {
-          "Title": {
+          "title": {
+            "type": "string"
+          },
+          "content": {
             "type": "string"
           },
           "published_at": {

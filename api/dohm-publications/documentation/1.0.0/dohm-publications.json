@@ -1,12 +1,12 @@
 {
   "paths": {
-    "/dohm-home": {
+    "/dohm-publications": {
       "get": {
         "deprecated": false,
-        "description": "Find all the dohm-home's records",
+        "description": "Find all the dohm-publications's records",
         "responses": {
           "200": {
-            "description": "Retrieve dohm-home document(s)",
+            "description": "Retrieve dohm-publications document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Dohm-home"
+          "Dohm-publications"
         ],
         "parameters": [
           {
@@ -195,10 +195,10 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single dohm-home record",
+        "description": "Update a single dohm-publications record",
         "responses": {
           "200": {
-            "description": "Retrieve dohm-home document(s)",
+            "description": "Retrieve dohm-publications document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Dohm-home"
+          "Dohm-publications"
         ],
         "requestBody": {
           "description": "",
@@ -252,7 +252,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewDohm-home"
+                "$ref": "#/components/schemas/NewDohm-publications"
               }
             }
           }
@@ -261,10 +261,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single dohm-home record",
+        "description": "Delete a single dohm-publications record",
         "responses": {
           "200": {
-            "description": "deletes a single dohm-home based on the ID supplied",
+            "description": "deletes a single dohm-publications based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -307,7 +307,7 @@
         },
         "summary": "",
         "tags": [
-          "Dohm-home"
+          "Dohm-publications"
         ],
         "parameters": []
       }
@@ -315,7 +315,7 @@
   },
   "components": {
     "schemas": {
-      "Dohm-home": {
+      "Dohm-publications": {
         "required": [
           "id"
         ],
@@ -326,7 +326,77 @@
           "title": {
             "type": "string"
           },
-          "teaser": {
+          "partners": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "hash",
+                "mime",
+                "size",
+                "url",
+                "provider"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "alternativeText": {
+                  "type": "string"
+                },
+                "caption": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "formats": {
+                  "type": "object"
+                },
+                "hash": {
+                  "type": "string"
+                },
+                "ext": {
+                  "type": "string"
+                },
+                "mime": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "number"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "previewUrl": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "provider_metadata": {
+                  "type": "object"
+                },
+                "related": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "content": {
             "type": "string"
           },
           "cover": {
@@ -396,24 +466,18 @@
               }
             }
           },
-          "welcome": {
-            "type": "string"
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
           }
         }
       },
-      "NewDohm-home": {
+      "NewDohm-publications": {
         "properties": {
           "title": {
             "type": "string"
           },
-          "teaser": {
-            "type": "string"
-          },
-          "welcome": {
+          "content": {
             "type": "string"
           },
           "published_at": {

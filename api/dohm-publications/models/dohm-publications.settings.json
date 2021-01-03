@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "dohm_homes",
+  "collectionName": "dohm_publications",
   "info": {
-    "name": "Dohm - Home",
+    "name": "Dohm - Publications",
     "description": ""
   },
   "options": {
@@ -14,7 +14,18 @@
     "title": {
       "type": "string"
     },
-    "teaser": {
+    "partners": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "content": {
       "type": "richtext"
     },
     "cover": {
@@ -27,9 +38,6 @@
       ],
       "plugin": "upload",
       "required": false
-    },
-    "welcome": {
-      "type": "richtext"
     }
   }
 }

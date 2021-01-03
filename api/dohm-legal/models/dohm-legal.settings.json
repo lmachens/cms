@@ -1,9 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "dohm_footers",
+  "collectionName": "dohm_legals",
   "info": {
-    "name": "Dohm - Footer",
-    "description": ""
+    "name": "Dohm - Legal"
   },
   "options": {
     "increments": true,

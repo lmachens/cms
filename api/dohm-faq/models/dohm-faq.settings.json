@@ -1,9 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "dohm_homes",
+  "collectionName": "dohm_faqs",
   "info": {
-    "name": "Dohm - Home",
-    "description": ""
+    "name": "Dohm - FAQ"
   },
   "options": {
     "increments": true,
@@ -13,9 +12,6 @@
   "attributes": {
     "title": {
       "type": "string"
-    },
-    "teaser": {
-      "type": "richtext"
     },
     "cover": {
       "model": "file",
@@ -28,7 +24,7 @@
       "plugin": "upload",
       "required": false
     },
-    "welcome": {
+    "content": {
       "type": "richtext"
     }
   }
