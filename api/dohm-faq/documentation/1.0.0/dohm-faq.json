@@ -396,6 +396,9 @@
           "content": {
             "type": "string"
           },
+          "teaser": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -408,6 +411,9 @@
             "type": "string"
           },
           "content": {
+            "type": "string"
+          },
+          "teaser": {
             "type": "string"
           },
           "published_at": {
