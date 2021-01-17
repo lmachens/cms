@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "pension_halstrup_legals",
+  "info": {
+    "name": "Pension Halstrup - Legal"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

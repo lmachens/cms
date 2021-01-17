@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "pension_halstrup_privacies",
+  "info": {
+    "name": "Pension Halstrup - Privacy"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

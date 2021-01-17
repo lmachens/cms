@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pension-halstrup-legal",
+      "handler": "pension-halstrup-legal.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pension-halstrup-legal",
+      "handler": "pension-halstrup-legal.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pension-halstrup-legal",
+      "handler": "pension-halstrup-legal.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

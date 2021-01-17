@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pension-halstrup-privacy",
+      "handler": "pension-halstrup-privacy.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pension-halstrup-privacy",
+      "handler": "pension-halstrup-privacy.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pension-halstrup-privacy",
+      "handler": "pension-halstrup-privacy.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
